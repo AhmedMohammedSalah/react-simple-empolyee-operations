@@ -10,15 +10,7 @@ const Employees = () => {
     {id:4,name:'Ahmed Jamal',job:'designer',active:true},
   ]
   const [data,setData]=useState(initData);
-  const editname=()=>{
-    
-    setData((state)=>{
-      const newData=[...state];
-      newData[0].name="Mona";
-      return newData
-    });
-
-  }
+ 
   const handleNewEmpolyee=(data)=>{
     setData((state)=>{
       const newData=[data ,...state];
